@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activities.DetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:id="@+id/detailImage"
+android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher_background"
+       />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Title"
+        android:textColor="#2da44e"
+        android:textStyle="bold"
+        android:layout_margin="7dp"
+        android:id="@+id/detailTitle"
+        android:textSize="19sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Date"
+        android:textColor="#6e7781"
+        android:layout_margin="7dp"
+        android:id="@+id/detailDate"
+        android:textSize="16sp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textColor="#6e7781"
+            android:id="@+id/detailUsername"
+            android:textSize="17sp"
+            android:drawableLeft="@drawable/ic_user"
+            />
+
+        <TextView
+            android:id="@+id/detailCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:drawableLeft="@drawable/ic_location"
+
+            android:text="City"
+            android:textColor="#6e7781"
+            android:textSize="17sp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post Body"
+        android:textColor="#6e7781"
+        android:id="@+id/detailBody"
+        android:layout_margin="8dp"
+        android:textSize="17sp"
+        />
+    </LinearLayout>
+</ScrollView>
